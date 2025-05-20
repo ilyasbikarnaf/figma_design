@@ -5,6 +5,7 @@ import Type from "@/assets/type.svg";
 import Gas from "@/assets/gas.svg";
 import EmptyHeart from "@/assets/emptyHeart.svg";
 import FullHeart from "@/assets/fullHeart.svg";
+import Shadow from "@/assets/shadow.svg";
 
 export default function CarCard({
   isFavorite,
@@ -33,6 +34,13 @@ export default function CarCard({
 
       <div>
         <Image alt="car image" src={Car} width={232} height={72} />
+        <Image
+          alt="blur"
+          src={Shadow}
+          width={232}
+          height={72}
+          className="-mt-10"
+        />
       </div>
 
       <div className="h-[120px] justify-around flex-col flex">
