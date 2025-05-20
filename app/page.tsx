@@ -25,7 +25,7 @@ export default function Page() {
     <main className=" px-15 rounded bg-[#F6F7F9]">
       <div className="p-5">
         <div className="flex justify-between mb-5 px-9 ">
-          <p className="text-secondary-light font-bold">Popular Car</p>
+          <p className="text-secondary-light font-bold">Popular Cars</p>
           <p className="text-primary font-bold">View All</p>
         </div>
         <div className="flex w-full gap-y-5 ml-3 gap-x-8 flex-wrap">
@@ -41,7 +41,7 @@ export default function Page() {
 
       <div className="p-5">
         <div className="flex justify-between mb-5 px-9 ">
-          <p className="text-secondary-light font-bold">Recommendation Car</p>
+          <p className="text-secondary-light font-bold">Recommended Cars</p>
         </div>
         <div className="flex w-full gap-8 ml-3 flex-wrap">
           {recommendationCar.slice(0, visibleCars).map((car) => (
@@ -60,7 +60,7 @@ export default function Page() {
             className="py-2 px-4 bg-primary text-white rounded hover:cursor-pointer hover:opacity-90"
             onClick={handleShowMore}
           >
-            Show more car
+            Show more cars
           </button>
           <p className="text-secondary-light text-md">
             {recommendationCar.length} Cars
