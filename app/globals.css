@@ -8,6 +8,30 @@
   --secondary-300: #90a3bf;
 }
 
+@layer utilities {
+  /* Background color utilities */
+  .bg-primary {
+    background-color: var(--primary-500);
+  }
+  .bg-secondary {
+    background-color: var(--secondary-500);
+  }
+  .bg-secondary-light {
+    background-color: var(--secondary-300);
+  }
+
+  /* Text color utilities */
+  .text-primary {
+    color: var(--primary-500);
+  }
+  .text-secondary {
+    color: var(--secondary-500);
+  }
+  .text-secondary-light {
+    color: var(--secondary-300);
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

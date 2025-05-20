@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SearchIcon from "@/assets/searchIcon.svg";
+import FilterIcon from "@/assets/filterIcon.svg";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,18 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-screen-2xl antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-[1490px] antialiased`}
       >
         <NavBar />
-        <main className="h-[80vh] bg-[#F6F7F9]">
-          <div>
-            <div>
-              <p>Popular Car</p>
-              <p>View All</p>
-            </div>
-          </div>
-        </main>
-        {/* {children} */}
+
+      
+
+        {children}
         <Footer />
       </body>
     </html>
